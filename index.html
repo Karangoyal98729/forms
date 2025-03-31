@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        input[type="text"]:invalid{
+            border-color: red;
+        }
+
+        input[type="text"]:invalid{
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>store</h1>
+        <nav>
+            <a href="#">Products</a>
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+     <main>
+        <form method="post">
+
+            <fieldset>
+                <legend>Products</legend>
+                <div>
+                    <label for="cheesebox"> cheesebox?</label>
+            <input id="cheesebox" type="checkbox" name="Product" value="cheese" />
+                </div>
+
+                <div>
+                    <label for="milk">milk?</label>
+            <input type="checkbox" name="Product" value="milk" checked />
+                </div>
+                
+                <div>
+                    <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" name="quantity" value="Quantity" placeholder="Quantity" step="0.5" />
+                </div>
+
+                <div>
+                    <label for="slide">Quantity</label>
+            <input id="slide" type="range" name="slide" />
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Customers</legend>
+                <div>
+                    <label for="full name">Full Name</label>
+                    <input type="text" name="full name" placeholder="Full Name" required />
+                </div>
+
+                <div>
+                <label for="email Address">Email Address</label>
+                <input id="email address" type="email" name="email Address"  placeholder="E-mail Address" />
+                </div>
+                
+                <div hidden>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password"  placeholder="Super secert password" />
+                </div>
+
+                <div>
+                    <label for="feedback">feedback</label>
+                    <textarea name="Feedback" id="feedback" rows="5" cols="80"></textarea>
+                </div>
+
+                <div>
+                    <label for="postalcode">Postal Code</label>
+            <input id="postalcode" type="text" name="postalcode" placeholder="A1A 1A1" required pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" />
+                </div>
+            </fieldset>
+
+            <Fieldset>
+                <legend>Pick a color</legend>
+
+                <div>
+                    <label for="redcolor">Red Color</label>
+                    <input id="redcolor" type="radio" name="favourite">
+                </div>
+
+                <div>
+                    <label for="greencolor">Green Color</label>
+                    <input id="greencolor" type="radio" name="favourite">
+                </div>
+
+                <div>
+                    <label for="bluecolor">Blue Color</label>
+                    <input id="bluecolor" type="radio" name="favourite">
+                </div>
+            </Fieldset>
+
+            <fieldset>
+                <legend>Selection</legend>
+
+                <div>
+                <select name="shipping">
+                    <option value="none"></option>
+                    <option value="Slow">Standard</option>
+                    <option value="fast" selected>Expedited</option>
+                </select>
+                </div>
+
+                <div>
+                <select name="notification">
+                    <option value="email">Email</option>
+                    <option value="text" selected>Text</option>
+                </select>
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="Add To Cart" />
+            <input type="reset" value="Clear" />
+            
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 karan Goyal</p>
+    </footer>
+</body>
+</html>
